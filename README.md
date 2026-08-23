@@ -3,8 +3,8 @@
 The cloud surface: moving things between machines. If a tool's job is to get
 something from one box to another, it lives here.
 
-Its sibling is `dev-kit`, which holds what you write code WITH. The split is by
-what a thing is for, not by where it runs.
+Its sibling is `dev-kit`, which holds what you write code WITH. The split is
+by what a thing is for, not by where it runs.
 
 ## What is here
 
@@ -27,19 +27,19 @@ An existing clone picks up the submodules with
   transferred CSVs, resolving the installed command first, so install it with
   `pip install git+https://github.com/iasolb/data-kit.git` if you want that
   flag to do anything.
-- **The data loaders and the research framework** live in `research-kit`. They
-  were briefly submodules of this repo, which was a filing mistake: they are
-  research tools, not transfer tools.
+- **The data loaders and the research framework** live in `research-kit`.
+  They were briefly submodules of this repo, which was a filing mistake:
+  they are research tools, not transfer tools.
 
 ## Where this is going
 
 `machine-sync` currently understands exactly two machines. The intended
-replacement is a registry: register a device's SSH address under an alias, then
-register named locations on that device beneath it, so a transfer names two
-machines and a spot rather than a path anyone has to remember.
+replacement is a registry: register a device's SSH address under an alias,
+then register named locations on that device beneath it, so a transfer names
+two machines and a spot rather than a path anyone has to remember.
 
-## Where this fits
+## Start here
 
-The naming convention is `<domain>-kit`. Siblings: `dev-kit` (editor and
-tooling config), `data-kit` (validation, checks, transforms), `research-kit`
-(analysis framework and API wrappers), `ai-kit` (the AI tooling umbrella).
+Open the `machine-sync` submodule — see `docs/setup.md` there for setup and
+the test checklist. The naming convention is `<domain>-kit`; siblings are
+`dev-kit`, `data-kit`, `research-kit`, and `ai-kit`.
