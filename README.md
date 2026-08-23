@@ -40,6 +40,6 @@ two machines and a spot rather than a path anyone has to remember.
 
 ## Start here
 
-Open the `machine-sync` submodule — see `docs/setup.md` there for setup and
+Open the `machine-sync` submodule: see `docs/setup.md` there for setup and
 the test checklist. The naming convention is `<domain>-kit`; siblings are
 `dev-kit`, `data-kit`, `research-kit`, and `ai-kit`.
