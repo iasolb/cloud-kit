@@ -19,6 +19,7 @@ Standalone tools in `tools/`, plain Python 3 (tested on 3.13), each with a
 |---|---|
 | `sync-branch.py` | Brings a local branch level with its remote: fast-forwards when behind, pushes when ahead, rebases your commits on top when diverged, and keeps uncommitted work safe. `--dry-run` shows the plan. |
 | `stash-triage.py` | Reports what each git stash holds and whether that change already landed, so old stashes can be dropped without guessing. Read-only. |
+| `ssh-registry.py` | Names your machines and their folders once (`device add`, `location add`), then turns `mac:incoming/report.pdf` into the real path and the exact `scp` command. Prints the command, never runs it. |
 
 ## Clone
 
@@ -45,6 +46,8 @@ An existing clone picks up the submodules with
 replacement is a registry: register a device's SSH address under an alias,
 then register named locations on that device beneath it, so a transfer names
 two machines and a spot rather than a path anyone has to remember.
+`tools/ssh-registry.py` is that registry, resolving only: it prints the
+transfer and moves nothing.
 
 ## Start here
 
