@@ -12,6 +12,13 @@ by what a thing is for, not by where it runs.
 |---|---|
 | `machine-sync` | push and pull files between two machines over SSH, with the paths named in config instead of typed |
 
+Standalone tools in `tools/`, plain Python 3 (tested on 3.13), each with a
+`--self-test`:
+
+| tool | what it does for you |
+|---|---|
+| `sync-branch.py` | Brings a local branch level with its remote: fast-forwards when behind, pushes when ahead, rebases your commits on top when diverged, and keeps uncommitted work safe. `--dry-run` shows the plan. |
+
 ## Clone
 
 ```
